@@ -3,7 +3,7 @@
 3) A, B - is true
 4) A
 5) A
-6)JRE is smaller than the JDK
+6) JRE is smaller than the JDK
 7) D
 8) A, B, C, D, E, F, G, H
 9) C - true
