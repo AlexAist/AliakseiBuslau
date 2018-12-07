@@ -11,6 +11,6 @@
 11) No, JRE consists of JVM + Java Packages
 12) F
 13) G
-14) A, C, D, E, F, G, H, I
-15) B, C, D
+14) A, C, D, E, F, G, H, I, J
+15) B, C, E
 16) 2
