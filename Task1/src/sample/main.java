@@ -11,5 +11,7 @@ public class main {
         functions.testByte();
         functions.testBoolean();
         functions.testString();
+        Student st = new Student("Petr", 5);
+        functions.testStringStudent(st.toString());
     }
 }
