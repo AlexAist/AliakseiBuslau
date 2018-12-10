@@ -10,5 +10,6 @@ public class main {
         functions.testShort();
         functions.testByte();
         functions.testBoolean();
+        functions.testString();
     }
 }
