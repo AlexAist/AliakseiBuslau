@@ -1,7 +1,7 @@
 1. A, E
 2. B, E, F
 3. E, K, D, H, P, C, G, M
-4. C
+4. А
 5. A
 6. E
 7. E, J, K, L
