@@ -1,7 +1,7 @@
 public class ChangeValues {
 
-    private int num1;
-    private int num2;
+    private double num1;
+    private double num2;
 
     public ChangeValues() {
     }
@@ -9,9 +9,9 @@ public class ChangeValues {
     public void enterValues(){
         InputOutputData inputOutputData = new InputOutputData();
             inputOutputData.stringOutput("Введите первое число: ");
-            num1 = inputOutputData.addIntValue();
+            num1 = inputOutputData.addDoubleValue();
             inputOutputData.stringOutput("Введите второе число");
-            num2 = inputOutputData.addIntValue();
+            num2 = inputOutputData.addDoubleValue();
             change();
     }
 

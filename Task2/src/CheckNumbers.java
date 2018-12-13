@@ -1,8 +1,8 @@
 public class CheckNumbers {
 
-    private int number1;
-    private int number2;
-    private int number3;
+    private double number1;
+    private double number2;
+    private double number3;
 
     public CheckNumbers() {
 
@@ -11,11 +11,11 @@ public class CheckNumbers {
     public void enterAndComp(){
         InputOutputData inputOutputData = new InputOutputData();
         inputOutputData.stringOutput("Введите первое число: ");
-        number1 = inputOutputData.addIntValue();
+        number1 = inputOutputData.addDoubleValue();
         inputOutputData.stringOutput("Введите второе число: ");
-        number2 = inputOutputData.addIntValue();
+        number2 = inputOutputData.addDoubleValue();
         inputOutputData.stringOutput("Введите третье число: ");
-        number3 = inputOutputData.addIntValue();
+        number3 = inputOutputData.addDoubleValue();
         comp();
     }
 

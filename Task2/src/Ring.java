@@ -1,7 +1,7 @@
 public class Ring {
 
-    private int R1;
-    private int R2;
+    private double R1;
+    private double R2;
     private double PI = 3.14159265;
 
     public Ring() {
@@ -11,9 +11,9 @@ public class Ring {
         InputOutputData inputOutputData = new InputOutputData();
         do {
             inputOutputData.stringOutput("Введите малый радиус:");
-            R1 = inputOutputData.addIntValue();
+            R1 = inputOutputData.addDoubleValue();
             inputOutputData.stringOutput("Введите больший радиус");
-            R2 = inputOutputData.addIntValue();
+            R2 = inputOutputData.addDoubleValue();
             if(R1 >= R2){
                 inputOutputData.stringOutput("Повторите ввод");
             }
