@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-/*        Dinosaur dinosaur = new Dinosaur();
+        Dinosaur dinosaur = new Dinosaur();
         dinosaur.addWeight();
 
         CheckNumbers checkNumbers = new CheckNumbers();
@@ -14,9 +14,12 @@ public class Main {
         sequence.enterNumber();
 
         Average average = new Average();
-        average.enterNumberAndCalc();*/
+        average.enterNumberAndCalc();
 
         ReverseNumber reverseNumber = new ReverseNumber();
         reverseNumber.EnterNumberAndReverse();
+
+        ChangeValues changeValues = new ChangeValues();
+        changeValues.enterValues();
     }
 }
