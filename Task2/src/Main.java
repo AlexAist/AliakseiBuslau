@@ -9,5 +9,8 @@ public class Main {
 
         Ring ring = new Ring();
         ring.enterNumbers();
+
+        Sequence sequence = new Sequence();
+        sequence.enterNumber();
     }
 }

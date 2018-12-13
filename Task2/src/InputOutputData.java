@@ -18,4 +18,13 @@ public class InputOutputData {
         Scanner in = new Scanner(System.in);
         return in.nextInt();
     }
+
+    public String addStringValue(){
+        Scanner in = new Scanner(System.in);
+        return in.nextLine();
+    }
+
+    public void stringOutputWithoutLn(String msg){
+        System.out.print(msg);
+    }
 }
