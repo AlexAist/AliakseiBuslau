@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Dinosaur dinosaur = new Dinosaur();
+/*        Dinosaur dinosaur = new Dinosaur();
         dinosaur.addWeight();
 
         CheckNumbers checkNumbers = new CheckNumbers();
@@ -11,6 +11,9 @@ public class Main {
         ring.enterNumbers();
 
         Sequence sequence = new Sequence();
-        sequence.enterNumber();
+        sequence.enterNumber();*/
+
+        Average average = new Average();
+        average.enterNumberAndCalc();
     }
 }
