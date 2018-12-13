@@ -4,6 +4,9 @@ public class Main {
         Dinosaur dinosaur = new Dinosaur();
         dinosaur.addWeight();
 
+        CheckNumbers checkNumbers = new CheckNumbers();
+        checkNumbers.enterAndComp();
+
 
     }
 }

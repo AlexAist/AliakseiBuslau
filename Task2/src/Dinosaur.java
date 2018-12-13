@@ -9,23 +9,20 @@ public class Dinosaur {
 
     }
 
-    private void stringOutput(String msg){
-        System.out.println(msg);
-    }
-
     public void addWeight(){
-        Scanner in = new Scanner(System.in);
-        stringOutput("Введите массу динозавра в килограммах");
-        weight = in.nextDouble();
+        InputOutputData inputOutputData = new InputOutputData();
+        inputOutputData.stringOutput("Введите массу динозавра в килограммах");
+        weight = inputOutputData.addDoubleValue();
         calculate();
     }
 
     private void calculate(){
+        InputOutputData inputOutputData = new InputOutputData();
         double millis = weight*1000000;
-        stringOutput("В миллиграммах: " + millis);
+        inputOutputData.stringOutput("В миллиграммах: " + millis);
         double grams = weight*1000;
-        stringOutput("В граммах: " + grams);
+        inputOutputData.stringOutput("В граммах: " + grams);
         double tons = weight/1000;
-        stringOutput("Тонн: " + tons);
+        inputOutputData.stringOutput("Тонн: " + tons);
     }
 }
