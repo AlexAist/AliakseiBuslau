@@ -15,7 +15,7 @@ public class Average {
     }
 
     private void calcAverage(){
-        int[] num = WorkWithTypes.intToString(number);
+        int[] num = WorkWithTypes.intToArray(number);
         int sum = 0;
         int count = 0;
         int composition = num[0];

@@ -20,7 +20,7 @@ public class Sequence {
         InputOutputData inputOutputData = new InputOutputData();
         int countInc = 0;
         int countDecr = 0;
-        int[] num = WorkWithTypes.intToString(number);
+        int[] num = WorkWithTypes.intToArray(number);
         for(int i = 0; i < num.length - 1; i++){
             if(num[i] > num[i + 1]){
                 inputOutputData.stringOutputWithoutLn(num[i] + " > " + num[i + 1] + "  ");

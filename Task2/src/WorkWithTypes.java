@@ -1,6 +1,6 @@
 public class WorkWithTypes {
 
-    public static int[] intToString(int number){
+    public static int[] intToArray(int number){
         String strWithInt = String.valueOf(number);
         int[] num = new int[strWithInt.length()];
         for (int i = 0; i < strWithInt.length(); i++){

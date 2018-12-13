@@ -11,9 +11,12 @@ public class Main {
         ring.enterNumbers();
 
         Sequence sequence = new Sequence();
-        sequence.enterNumber();*/
+        sequence.enterNumber();
 
         Average average = new Average();
-        average.enterNumberAndCalc();
+        average.enterNumberAndCalc();*/
+
+        ReverseNumber reverseNumber = new ReverseNumber();
+        reverseNumber.EnterNumberAndReverse();
     }
 }
