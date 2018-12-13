@@ -7,6 +7,7 @@ public class Main {
         CheckNumbers checkNumbers = new CheckNumbers();
         checkNumbers.enterAndComp();
 
-
+        Ring ring = new Ring();
+        ring.enterNumbers();
     }
 }

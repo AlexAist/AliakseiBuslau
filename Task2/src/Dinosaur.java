@@ -11,8 +11,13 @@ public class Dinosaur {
 
     public void addWeight(){
         InputOutputData inputOutputData = new InputOutputData();
-        inputOutputData.stringOutput("Введите массу динозавра в килограммах");
-        weight = inputOutputData.addDoubleValue();
+        do {
+            inputOutputData.stringOutput("Введите массу динозавра в килограммах");
+            weight = inputOutputData.addDoubleValue();
+            if(weight <= 0){
+                inputOutputData.stringOutput("Повторите ввод");
+            }
+        }while (weight <= 0);
         calculate();
     }
 

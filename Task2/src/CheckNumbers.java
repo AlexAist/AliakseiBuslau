@@ -16,6 +16,11 @@ public class CheckNumbers {
         number2 = inputOutputData.addIntValue();
         inputOutputData.stringOutput("Введите третье число: ");
         number3 = inputOutputData.addIntValue();
+        comp();
+    }
+
+    public void comp(){
+        InputOutputData inputOutputData = new InputOutputData();
         if(number1 == number2 && number2 == number3){
             inputOutputData.stringOutput("Числа одинаковы");
         }
