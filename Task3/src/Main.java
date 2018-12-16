@@ -1,11 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-       // Dragon.heads(Dragon.inputAge());
-
-       // Triangle.AddCoordAndCalc();
-
-       // MoodStatus.face();
-       // Date.inputValue();
+        Dragon.heads(Dragon.inputAge());
+        Triangle.AddCoordAndCalc();
+        MoodStatus.face();
+        Date.inputValue();
         Letters.enterAndComp();
+
     }
 }
