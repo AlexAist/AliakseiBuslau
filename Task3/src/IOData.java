@@ -7,6 +7,11 @@ public class IOData {
         return in.nextInt();
     }
 
+    public static double addDoubleValue(){
+        Scanner in = new Scanner(System.in);
+        return in.nextDouble();
+    }
+
     public static void printMes(String msg){
         System.out.println(msg);
     }
