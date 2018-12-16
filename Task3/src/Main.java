@@ -4,6 +4,7 @@ public class Main {
 
        // Triangle.AddCoordAndCalc();
 
-        MoodStatus.face();
+       // MoodStatus.face();
+        Date.inputValue();
     }
 }
