@@ -5,6 +5,7 @@ public class Main {
        // Triangle.AddCoordAndCalc();
 
        // MoodStatus.face();
-        Date.inputValue();
+       // Date.inputValue();
+        Letters.enterAndComp();
     }
 }

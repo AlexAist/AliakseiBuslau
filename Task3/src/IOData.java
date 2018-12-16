@@ -15,4 +15,9 @@ public class IOData {
     public static void printMes(String msg){
         System.out.println(msg);
     }
+
+    public static char addCharValue(){
+        Scanner in = new Scanner(System.in);
+        return in.next(".").charAt(0);
+    }
 }
