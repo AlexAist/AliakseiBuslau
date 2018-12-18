@@ -1,44 +1,47 @@
+import java.io.FileReader;
+
 public class Dragon {
 
-    private static void mesForInput (){
+    public static int INITIAL_HEADS = 3;
+    public static int FIRST_PERIOD_HEADS = 3;
+    public static int SECOND_PERIOD_HEADS = 2;
+    public static int FIRST_PERIOD = 200;
+    public static int SECOND_PERIOD = 300;
+    public static int BETWEEN_PERIODS = 100;
+    public static int EYES = 2;
+
+    private static void mesForInput() {
         IOData.printMes("Enter age: ");
     }
 
-    public static int inputAge () {
+    public static int inputAge() {
         mesForInput();
-       return IOData.addIntValue();
+        return IOData.addIntValue();
     }
 
-    private static int before200(int age){
-        return age * 3 + 3;
+    public static void printNumOfHeads(int heads, int eyes) {
+        IOData.printMes("Number of heads = " + heads);
+        IOData.printMes("Number of eyes = " + eyes);
     }
 
-    private static int before300(int age){
-        int before200 = before200(199);
-        int after200 = (age - 199) * 2;
-        return before200 + after200;
+    public static int calcEyes(int heads){
+        return heads * EYES;
     }
 
-    private static int after300(int age){
-        int before300 = before300(299);
-        return before300 + (age - 299);
-    }
-
-    private static void printNumOfHeads(int value){
-        IOData.printMes("Number of heads = " + value);
-    }
-
-    public static void heads(int age){
-        int firstStage = 200;
-        int secStage = 300;
-        if(age < firstStage){
-            printNumOfHeads(before200(age));
+    public static int heads(int age) {
+        int res = 0;
+        if (age > 0) {
+            if (age < FIRST_PERIOD) {
+                res += INITIAL_HEADS + age * FIRST_PERIOD_HEADS;
+            } else if (age < SECOND_PERIOD) {
+                res += INITIAL_HEADS + FIRST_PERIOD * FIRST_PERIOD_HEADS;
+                res += (age - FIRST_PERIOD) * SECOND_PERIOD_HEADS;
+            } else {
+                res += INITIAL_HEADS + FIRST_PERIOD * FIRST_PERIOD_HEADS;
+                res += BETWEEN_PERIODS * SECOND_PERIOD_HEADS;
+                res += age - SECOND_PERIOD;
+            }
         }
-        else if(age > firstStage && age < secStage){
-            printNumOfHeads(before300(age));
-        }
-        else if (age > secStage){
-            printNumOfHeads(after300(age));
-        }
+        return res;
     }
 }
